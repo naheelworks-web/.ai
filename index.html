@@ -17,13 +17,13 @@
   <meta property="og:url" content="https://jarvis-ai.windows/">
   <meta property="og:title" content="JARVIS AI — Personal Iron Man Voice AI for Windows">
   <meta property="og:description" content="Standalone Windows Executable (89 MB) powered by Groq Llama-3. Instant voice commands, media playback, and non-blocking desktop automation.">
-  <meta property="og:image" content="assets/Jarvis.gif">
+  <meta property="og:image" content="Jarvis.gif">
 
   <!-- Twitter Card -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:title" content="JARVIS AI — Iron Man Style Voice Assistant for Windows">
   <meta property="twitter:description" content="Sub-second voice intelligence, YouTube autoplay, real-time live news, and zero-python standalone Windows runtime.">
-  <meta property="twitter:image" content="assets/Jarvis.gif">
+  <meta property="twitter:image" content="Jarvis.gif">
 
   <!-- Favicon / Theme -->
   <meta name="theme-color" content="#000000">
@@ -127,15 +127,16 @@
             <div class="reactor-radar-ring inner-ring"></div>
             
             <div class="media-visual-container">
-              <!-- Visual asset with fallback -->
-              <img src="assets/Jarvis.gif" 
+              <!-- Smart GIF loading: checks root Jarvis.gif, then assets/Jarvis.gif, else activates CSS reactor -->
+              <img src="Jarvis.gif" 
                    alt="JARVIS Arc Reactor Core Voice Intelligence Interface" 
                    class="hero-gif" 
-                   onerror="this.style.display='none'; document.getElementById('reactor-fallback').style.display='flex';">
+                   onerror="if (!this.dataset.retry) { this.dataset.retry = '1'; this.src = 'assets/Jarvis.gif'; } else { this.style.display = 'none'; document.getElementById('reactor-fallback').style.display = 'flex'; }">
               
-              <!-- Built-in CSS Arc Reactor Core in case image is loading or missing -->
+              <!-- Built-in Pure CSS Fallback Arc Reactor Core -->
               <div id="reactor-fallback" class="reactor-fallback-core" style="display: none;">
-                <div class="core-circle"></div>
+                <div class="core-circle pulse-slow"></div>
+                <div class="core-rings"></div>
                 <div class="core-text">JARVIS CORE</div>
               </div>
             </div>
@@ -456,7 +457,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="12" cy="12" r="10"></circle>
               <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path>
             </svg>
             <span>Works Worldwide with Groq API</span>
           </div>
@@ -480,16 +481,16 @@
         </div>
 
         <div class="pricing-grid">
-          <!-- Tier 1: Standard Edition -->
+          <!-- Tier 1: Standard Edition ($12) -->
           <div class="pricing-card">
             <div class="pricing-header">
               <span class="tier-badge">PLUG &amp; PLAY</span>
               <h3 class="tier-title">Standard Edition</h3>
               <p class="tier-subtitle">Ideal for everyday users, productivity enthusiasts, and gaming setups.</p>
               <div class="price-display">
-                <span class="price-currency">Instant</span>
-                <span class="price-amount">Direct</span>
-                <span class="price-period">/ WhatsApp delivery</span>
+                <span class="price-currency">$</span>
+                <span class="price-amount">12</span>
+                <span class="price-period">/ one-time</span>
               </div>
             </div>
 
@@ -533,16 +534,16 @@
             </ul>
 
             <div class="pricing-cta-wrap">
-              <a href="https://wa.me/923140474635?text=Hello%20Naheel,%20I%20am%20interested%20in%20purchasing%20the%20JARVIS%20AI%20Standard%20Edition." 
+              <a href="https://wa.me/923140474635?text=Hello%20Naheel,%20I%20am%20interested%20in%20purchasing%20the%20JARVIS%20AI%20Standard%20Edition%20($12)." 
                  class="btn btn-secondary btn-block" 
                  target="_blank" 
                  rel="noopener noreferrer">
-                Order Standard on WhatsApp
+                Order Standard on WhatsApp ($12)
               </a>
             </div>
           </div>
 
-          <!-- Tier 2: Developer & Student Edition (Highlighted) -->
+          <!-- Tier 2: Developer & Student Edition ($20) (Highlighted) -->
           <div class="pricing-card featured-tier">
             <div class="popular-ribbon">MOST POPULAR • BEST VALUE</div>
             <div class="pricing-header">
@@ -550,9 +551,9 @@
               <h3 class="tier-title">Developer &amp; Student Edition</h3>
               <p class="tier-subtitle">Designed for CS students, programmers, and creators looking to learn or submit projects.</p>
               <div class="price-display">
-                <span class="price-currency">Full</span>
-                <span class="price-amount">Access</span>
-                <span class="price-period">/ Lifetime Commercial Rights</span>
+                <span class="price-currency">$</span>
+                <span class="price-amount">20</span>
+                <span class="price-period">/ lifetime access</span>
               </div>
             </div>
 
@@ -596,11 +597,11 @@
             </ul>
 
             <div class="pricing-cta-wrap">
-              <a href="https://wa.me/923140474635?text=Hello%20Naheel,%20I%20am%20interested%20in%20purchasing%20the%20JARVIS%20AI%20Developer%20and%20Student%20Edition%20with%20Full%20Source%20Code." 
+              <a href="https://wa.me/923140474635?text=Hello%20Naheel,%20I%20am%20interested%20in%20purchasing%20the%20JARVIS%20AI%20Developer%20and%20Student%20Edition%20with%20Full%20Source%20Code%20($20)." 
                  class="btn btn-primary btn-block btn-pulse" 
                  target="_blank" 
                  rel="noopener noreferrer">
-                Get Developer Edition on WhatsApp
+                Get Developer Edition on WhatsApp ($20)
               </a>
             </div>
           </div>
