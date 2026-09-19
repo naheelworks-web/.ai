@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>JARVIS AI — Iron Man Style Voice Assistant for Windows</title>
+  <meta name="title" content="JARVIS AI — Iron Man Style Voice Assistant for Windows">
+  <meta name="description" content="Control your Windows PC with your voice, stream music hands-free, access real-time news, and solve complex problems at sub-second speeds powered by Groq Llama-3. Standalone 89MB .exe.">
+  <meta name="keywords" content="JARVIS AI, Windows Voice Assistant, Groq Llama 3, Python Voice Assistant, Desktop Automation, AI Voice Assistant Pakistan">
+  <meta name="author" content="Naheel">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jarvis-ai.windows/">
+  <meta property="og:title" content="JARVIS AI — Personal Iron Man Voice AI for Windows">
+  <meta property="og:description" content="Standalone Windows Executable (89 MB) powered by Groq Llama-3. Instant voice commands, media playback, and non-blocking desktop automation.">
+  <meta property="og:image" content="assets/Jarvis.gif">
+
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="JARVIS AI — Iron Man Style Voice Assistant for Windows">
+  <meta property="twitter:description" content="Sub-second voice intelligence, YouTube autoplay, real-time live news, and zero-python standalone Windows runtime.">
+  <meta property="twitter:image" content="assets/Jarvis.gif">
+
+  <!-- Favicon / Theme -->
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300e5ff'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Atmospheric Lighting -->
+  <div class="glow-orb glow-top"></div>
+  <div class="glow-orb glow-center"></div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo" aria-label="JARVIS AI Home">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">JARVIS <span class="accent-text">AI</span></span>
+        <span class="version-badge">v2.0</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#simulator" class="nav-link">Live Demo</a>
+        <a href="#specs" class="nav-link">Specs</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="nav-cta-wrapper">
+        <a href="https://wa.me/923140474635?text=Hello%20Naheel,%20I%20am%20interested%20in%20purchasing%20the%20JARVIS%20AI%20Assistant." 
+           class="btn btn-nav" 
+           target="_blank" 
+           rel="noopener noreferrer">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/>
+          </svg>
+          <span>Order on WhatsApp</span>
+        </a>
+        <button class="mobile-menu-btn" id="menuToggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <nav class="mobile-nav-links">
+        <a href="#features" class="mobile-link">Features</a>
+        <a href="#simulator" class="mobile-link">Live Demo</a>
+        <a href="#specs" class="mobile-link">Specs</a>
+        <a href="#pricing" class="mobile-link">Pricing</a>
+        <a href="#faq" class="mobile-link">FAQ</a>
+        <a href="https://wa.me/923140474635?text=Hello%20Naheel,%20I%20am%20interested%20in%20purchasing%20the%20JARVIS%20AI%20Assistant." 
+           class="btn btn-primary mobile-order-btn" 
+           target="_blank" 
+           rel="noopener noreferrer">
+          Order on WhatsApp (+92 314 0474635)
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        <!-- Top Pill Tag -->
+        <div class="hero-tag-wrapper">
+          <div class="hero-pill-badge">
+            <span class="pulsing-dot"></span>
+            <span class="pill-text">WINDOWS 10 &amp; 11 VERIFIED • STANDALONE .EXE • NO PYTHON NEEDED</span>
+          </div>
+        </div>
+
+        <!-- Headline & Subheadline -->
+        <h1 class="hero-title">
+          Your Personal <span class="gradient-text">Iron Man Style</span> Voice AI for Windows.
+        </h1>
+        <p class="hero-subtitle">
+          Control your desktop, auto-play YouTube music hands-free, access live real-time news, and solve complex problems at sub-second speeds powered by <span class="text-highlight">Groq Llama-3</span>.
+        </p>
+
+        <!-- Centerpiece Arc Reactor Visual -->
+        <div class="hero-centerpiece">
+          <div class="arc-glow-layer"></div>
+          <div class="arc-reactor-frame">
+            <div class="hud-corner hud-top-left">+</div>
+            <div class="hud-corner hud-top-right">+</div>
+            <div class="hud-corner hud-bottom-left">+</div>
+            <div class="hud-corner hud-bottom-right">+</div>
+
+            <div class="reactor-radar-ring outer-ring"></div>
+            <div class="reactor-radar-ring inner-ring"></div>
+            
+            <div class="media-visual-container">
+              <!-- Visual asset with fallback -->
+              <img src="assets/Jarvis.gif" 
+                   alt="JARVIS Arc Reactor Core Voice Intelligence Interface" 
+                   class="hero-gif" 
+                   onerror="this.style.display='none'; document.getElementById('reactor-fallback').style.display='flex';">
+              
+              <!-- Built-in CSS Arc Reactor Core in case image is loading or missing -->
+              <div id="reactor-fallback" class="reactor-fallback-core" style="display: none;">
+                <div class="core-circle"></div>
+                <div class="core-text">JARVIS CORE</div>
+              </div>
+            </div>
+
+            <!-- HUD Overlay Status Chips -->
+            <div class="hud-chip hud-chip-left">
+              <span class="hud-dot"></span>
+              <span class="hud-mono">ENGINE: GROQ-LLAMA3</span>
+            </div>
+            <div class="hud-chip hud-chip-right">
+              <span class="hud-dot active"></span>
+              <span class="hud-mono">SYS STATUS: READY (0.8s)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dual Conversion CTAs -->
+        <div class="hero-cta-group">
+          <a href="https://wa.me/923140474635?text=Hello%20Naheel,%20I%20am%20interested%20in%20purchasing%20the%20JARVIS%20AI%20Assistant." 
+             class="btn btn-primary btn-large" 
+             target="_blank" 
+             rel="noopener noreferrer">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/>
+            </svg>
+            <span>Buy on WhatsApp (+92 314 0474635)</span>
+          </a>
+
+          <a href="mailto:naheel.cyber@gmail.com?subject=JARVIS%20AI%20Assistant%20Inquiry" 
+             class="btn btn-secondary btn-large">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>Email Developer</span>
+          </a>
+        </div>
+
+        <!-- Trust Signals Bar -->
+        <div class="hero-trust-bar">
+          <div class="trust-item">
+            <span class="trust-metric">&lt; 0.8s</span>
+            <span class="trust-label">Voice Latency</span>
+          </div>
+          <div class="trust-separator">/</div>
+          <div class="trust-item">
+            <span class="trust-metric">89 MB</span>
+            <span class="trust-label">Standalone Binary</span>
+          </div>
+          <div class="trust-separator">/</div>
+          <div class="trust-item">
+            <span class="trust-metric">100%</span>
+            <span class="trust-label">Plug &amp; Play Windows</span>
+          </div>
+          <div class="trust-separator">/</div>
+          <div class="trust-item">
+            <span class="trust-metric">Direct</span>
+            <span class="trust-label">WhatsApp Delivery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE COMMAND SIMULATOR -->
+    <section class="simulator-section" id="simulator">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-kicker">Interactive Terminal</span>
+          <h2 class="section-title">Try Before You Buy</h2>
+          <p class="section-desc">Experience how JARVIS responds to natural spoken commands in real-time, executing desktop tasks without UI lag.</p>
+        </div>
+
+        <div class="simulator-wrapper">
+          <!-- Navigation Tabs -->
+          <div class="sim-tab-row" role="tablist" aria-label="Simulator Commands">
+            <button class="sim-tab active" data-command="music" role="tab" aria-selected="true" id="tab-music">
+              <span class="sim-tab-icon">🎵</span>
+              <span class="sim-tab-title">Play Music</span>
+            </button>
+            <button class="sim-tab" data-command="news" role="tab" aria-selected="false" id="tab-news">
+              <span class="sim-tab-icon">📰</span>
+              <span class="sim-tab-title">Live News</span>
+            </button>
+            <button class="sim-tab" data-command="apps" role="tab" aria-selected="false" id="tab-apps">
+              <span class="sim-tab-icon">⚡</span>
+              <span class="sim-tab-title">System Apps</span>
+            </button>
+            <button class="sim-tab" data-command="math" role="tab" aria-selected="false" id="tab-math">
+              <span class="sim-tab-icon">🧠</span>
+              <span class="sim-tab-title">Study &amp; Math</span>
+            </button>
+          </div>
+
+          <!-- Console Window Container -->
+          <div class="terminal-card">
+            <!-- Window Header -->
+            <div class="terminal-header">
+              <div class="window-controls">
+                <span class="control-dot red"></span>
+                <span class="control-dot yellow"></span>
+                <span class="control-dot green"></span>
+              </div>
+              <div class="terminal-title">
+                <span class="mono-code">JARVIS_CONSOLE_V2.0 // GROQ_LLAMA3_CORE</span>
+              </div>
+              <div class="terminal-latency" id="simLatency">
+                <span class="live-dot"></span>
+                <span>LATENCY: 142ms</span>
+              </div>
+            </div>
+
+            <!-- Terminal Body -->
+            <div class="terminal-content">
+              <!-- Spoken Voice Bar -->
+              <div class="speech-box">
+                <div class="speech-label">
+                  <span class="user-avatar">YOU</span>
+                  <span class="speech-status">Voice Input Detected</span>
+                  <div class="audio-waves" id="audioWaveform">
+                    <span class="wave-bar"></span>
+                    <span class="wave-bar"></span>
+                    <span class="wave-bar"></span>
+                    <span class="wave-bar"></span>
+                    <span class="wave-bar"></span>
+                  </div>
+                </div>
+                <div class="speech-text" id="simUserPrompt">
+                  "Jarvis, play Interstellar soundtrack on YouTube."
+                </div>
+              </div>
+
+              <!-- JARVIS Response Area -->
+              <div class="response-box">
+                <div class="jarvis-label">
+                  <span class="jarvis-avatar">JARVIS</span>
+                  <span class="jarvis-badge">Speech Synthesizer</span>
+                </div>
+                <div class="jarvis-reply" id="simJarvisResponse">
+                  "Initiating Hans Zimmer's Interstellar OST on YouTube immediately, Sir. Volume normalized."
+                </div>
+
+                <!-- Action Badge Output -->
+                <div class="system-action-row" id="simActionBadges">
+                  <div class="action-tag success">
+                    <span class="tag-icon">▶</span>
+                    <span class="tag-text">AUTO_PLAY: Launched YouTube in background (First Result)</span>
+                  </div>
+                  <div class="action-tag code">
+                    <span class="mono-code">subprocess.Popen(['chrome.exe', 'https://youtu.be/...'])</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Terminal Footer Helper -->
+            <div class="terminal-footer">
+              <span class="mono-dim">TIP: Press [SPACEBAR] in the desktop app anytime to interrupt speech immediately.</span>
+              <a href="https://wa.me/923140474635?text=Hello%20Naheel,%20I%20am%20interested%20in%20purchasing%20the%20JARVIS%20AI%20Assistant." 
+                 class="terminal-action-link" target="_blank" rel="noopener noreferrer">
+                Get Instant Access →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4-PILLAR FEATURE MATRIX -->
+    <section class="features-section" id="features">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-kicker">Engine Architecture</span>
+          <h2 class="section-title">Engineered for Flawless Speed</h2>
+          <p class="section-desc">Traditional voice assistants are sluggish and lock up your PC. JARVIS v2.0 was built from the ground up for instantaneous response.</p>
+        </div>
+
+        <div class="feature-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="card-glow-edge"></div>
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <span class="feature-tag">SUB-SECOND INFERENCE</span>
+            <h3 class="feature-heading">Groq Llama-3 Voice Intelligence</h3>
+            <p class="feature-body">
+              Eliminate the agonizing 4-second delay of traditional assistants. Utilizing Groq’s ultra-fast LPU inference, JARVIS streams replies and begins vocal synthesis in under 800 milliseconds.
+            </p>
+            <div class="feature-micro-spec">
+              <span class="mono-code">Latency: ~280ms LPU API</span>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="card-glow-edge"></div>
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 11a9 9 0 0 1 9 9"></path>
+                <path d="M4 4a16 16 0 0 1 16 16"></path>
+                <circle cx="5" cy="19" r="1"></circle>
+              </svg>
+            </div>
+            <span class="feature-tag">REAL-TIME TELEMETRY</span>
+            <h3 class="feature-heading">Live Google News Integration</h3>
+            <p class="feature-body">
+              Say "Jarvis, what is the latest news?" to receive crisp, real-time audio briefings from Google News RSS. Covers national, global, financial, and technology breakthroughs instantly.
+            </p>
+            <div class="feature-micro-spec">
+              <span class="mono-code">Source: RSS XML Live Feed</span>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="card-glow-edge"></div>
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+              </svg>
+            </div>
+            <span class="feature-tag">AUTONOMOUS MEDIA</span>
+            <h3 class="feature-heading">Hands-Free YouTube Autoplay</h3>
+            <p class="feature-body">
+              Never touch your mouse while working or studying. JARVIS autonomously scrapes and launches the exact top YouTube audio/video match with play, pause, and volume controls.
+            </p>
+            <div class="feature-micro-spec">
+              <span class="mono-code">Control: Autonomous Scrape &amp; Launch</span>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card">
+            <div class="card-glow-edge"></div>
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <span class="feature-tag">ZERO-FREEZE GUI</span>
+            <h3 class="feature-heading">Non-Blocking Subprocess Automation</h3>
+            <p class="feature-body">
+              Launch applications like Notepad, Calculator, VS Code, or custom scripts without freezing your system. Background threading keeps the Arc Reactor visualizer fluid at 60 FPS.
+            </p>
+            <div class="feature-micro-spec">
+              <span class="mono-code">Threaded: Python Multi-Threading</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH SPECS & TRUST BANNER -->
+    <section class="specs-section" id="specs">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-kicker">System Verification</span>
+          <h2 class="section-title">Technical Specifications</h2>
+          <p class="section-desc">Designed to be ultra-lean, lightweight, and completely unobtrusive on any modern Windows PC.</p>
+        </div>
+
+        <div class="specs-grid">
+          <div class="spec-card">
+            <div class="spec-metric-row">
+              <span class="spec-number">89</span>
+              <span class="spec-unit">MB</span>
+            </div>
+            <h4 class="spec-title">Single Executable</h4>
+            <p class="spec-description">Packaged into an ultra-compact standalone binary. No Python installer, virtualenv, or dependency configurations required.</p>
+            <div class="spec-badge">run.exe Standalone</div>
+          </div>
+
+          <div class="spec-card">
+            <div class="spec-metric-row">
+              <span class="spec-number">64</span>
+              <span class="spec-unit">BIT</span>
+            </div>
+            <h4 class="spec-title">Windows 10 &amp; 11 Verified</h4>
+            <p class="spec-description">Native compatibility with modern Windows OS builds, high-DPI scaling, and Windows system audio controllers.</p>
+            <div class="spec-badge">Native Win32 Subsystem</div>
+          </div>
+
+          <div class="spec-card">
+            <div class="spec-metric-row">
+              <span class="spec-number">&lt;120</span>
+              <span class="spec-unit">MB</span>
+            </div>
+            <h4 class="spec-title">Low RAM Footprint</h4>
+            <p class="spec-description">Consumes less memory than an idle browser tab. Keeps your CPU and GPU completely free for gaming and development.</p>
+            <div class="spec-badge">Minimal Idle CPU (&lt;0.5%)</div>
+          </div>
+
+          <div class="spec-card">
+            <div class="spec-metric-row">
+              <span class="spec-number">0.0</span>
+              <span class="spec-unit">SEC</span>
+            </div>
+            <h4 class="spec-title">Spacebar Audio Interrupt</h4>
+            <p class="spec-description">Tired of waiting for AI to stop talking? Press the spacebar for an instantaneous hardware cut-off and immediate listen reset.</p>
+            <div class="spec-badge">Instant Hardware Kill-Switch</div>
+          </div>
+        </div>
+
+        <!-- Trust & Security Highlights -->
+        <div class="trust-banner">
+          <div class="trust-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>Safe &amp; Clean Local Execution</span>
+          </div>
+          <div class="trust-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <span>Works Worldwide with Groq API</span>
+          </div>
+          <div class="trust-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span>Direct WhatsApp Human Support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMERCIAL PRICING TIERS -->
+    <section class="pricing-section" id="pricing">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-kicker">Simple Transparent Pricing</span>
+          <h2 class="section-title">Choose Your Edition</h2>
+          <p class="section-desc">Get the plug-and-play desktop assistant or unlock full access to the modular Python source code.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Tier 1: Standard Edition -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <span class="tier-badge">PLUG &amp; PLAY</span>
+              <h3 class="tier-title">Standard Edition</h3>
+              <p class="tier-subtitle">Ideal for everyday users, productivity enthusiasts, and gaming setups.</p>
+              <div class="price-display">
+                <span class="price-currency">Instant</span>
+                <span class="price-amount">Direct</span>
+                <span class="price-period">/ WhatsApp delivery</span>
+              </div>
+            </div>
+
+            <ul class="tier-feature-list">
+              <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Standalone Plug &amp; Play <strong>run.exe</strong> (89 MB)</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Futuristic Arc Reactor Cyber GUI (60 FPS)</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Groq Llama-3 Voice Intelligence Engine</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Hands-Free YouTube Playback &amp; Live News</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Comprehensive PDF User Guide &amp; Command List</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Direct WhatsApp Setup &amp; Activation Assistance</span>
+              </li>
+            </ul>
+
+            <div class="pricing-cta-wrap">
+              <a href="https://wa.me/923140474635?text=Hello%20Naheel,%20I%20am%20interested%20in%20purchasing%20the%20JARVIS%20AI%20Standard%20Edition." 
+                 class="btn btn-secondary btn-block" 
+                 target="_blank" 
+                 rel="noopener noreferrer">
+                Order Standard on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Tier 2: Developer & Student Edition (Highlighted) -->
+          <div class="pricing-card featured-tier">
+            <div class="popular-ribbon">MOST POPULAR • BEST VALUE</div>
+            <div class="pricing-header">
+              <span class="tier-badge neon">FULL SOURCE CODE INCLUDED</span>
+              <h3 class="tier-title">Developer &amp; Student Edition</h3>
+              <p class="tier-subtitle">Designed for CS students, programmers, and creators looking to learn or submit projects.</p>
+              <div class="price-display">
+                <span class="price-currency">Full</span>
+                <span class="price-amount">Access</span>
+                <span class="price-period">/ Lifetime Commercial Rights</span>
+              </div>
+            </div>
+
+            <ul class="tier-feature-list">
+              <li class="highlight-item">
+                <svg class="check-icon cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>Everything included in Standard Edition</strong></span>
+              </li>
+              <li>
+                <svg class="check-icon cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>Full Modular Python Source Code</strong> (<code class="mono-inline">backend/</code>, <code class="mono-inline">frontend/</code>, <code class="mono-inline">run.py</code>)</span>
+              </li>
+              <li>
+                <svg class="check-icon cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Full Commercial, Resale &amp; Academic Submission Rights</span>
+              </li>
+              <li>
+                <svg class="check-icon cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Complete System Architecture &amp; Code Documentation</span>
+              </li>
+              <li>
+                <svg class="check-icon cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Easy Instructions to Add Custom Voice Skills &amp; APIs</span>
+              </li>
+              <li>
+                <svg class="check-icon cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span><strong>Priority 1-on-1 Guidance &amp; Support</strong> directly by Naheel</span>
+              </li>
+            </ul>
+
+            <div class="pricing-cta-wrap">
+              <a href="https://wa.me/923140474635?text=Hello%20Naheel,%20I%20am%20interested%20in%20purchasing%20the%20JARVIS%20AI%20Developer%20and%20Student%20Edition%20with%20Full%20Source%20Code." 
+                 class="btn btn-primary btn-block btn-pulse" 
+                 target="_blank" 
+                 rel="noopener noreferrer">
+                Get Developer Edition on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section" id="faq">
+      <div class="section-container faq-container">
+        <div class="section-header">
+          <span class="section-kicker">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">Everything you need to know about buying, installing, and running JARVIS AI.</p>
+        </div>
+
+        <div class="accordion" id="faqAccordion">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="faq-question">Does this software require prior coding or technical knowledge?</span>
+              <span class="accordion-arrow"></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <p>Not at all. If you choose the <strong>Standard Edition</strong>, JARVIS comes packaged as a single standalone Windows executable (<code>run.exe</code>). You simply double-click the file to open the futuristic Arc Reactor interface. No Python installation, command-line setup, or environment configurations are required.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="faq-question">Is an active internet connection required to use JARVIS?</span>
+              <span class="accordion-arrow"></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <p>Yes. JARVIS leverages the lightning-fast Groq Llama-3 cloud LPU engine to provide sub-second reasoning and answers, along with live Google News RSS feeds and YouTube search streaming. Offline desktop application launches work locally, but AI intelligence requires an active connection.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="faq-question">Can students submit this as an academic final year project (FYP)?</span>
+              <span class="accordion-arrow"></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <p>Yes, absolutely. The <strong>Developer &amp; Student Edition</strong> includes the complete clean, modular Python source code (divided cleanly into <code>frontend/</code> and <code>backend/</code>), along with system architecture documentation. You receive full academic submission and customization rights, making it suitable for university presentations and coursework.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="faq-question">How will I receive the software after payment?</span>
+              <span class="accordion-arrow"></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <p>Delivery is instant. Once you confirm your order via WhatsApp or Email, Naheel directly delivers your private ZIP package link containing the software, documentation, and your access credentials. Naheel will also stay on chat with you to ensure your assistant launches smoothly.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span class="faq-question">How does payment work for international and local buyers?</span>
+              <span class="accordion-arrow"></span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <p>We accept local payment options in Pakistan (JazzCash, Easypaisa, Raast, Direct Bank Transfer) as well as global payment methods for international buyers. Simply message us on WhatsApp at <strong>+92 314 0474635</strong> to receive payment details tailored to your country.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">⚡</span>
+            <span class="logo-text">JARVIS <span class="accent-text">AI</span></span>
+          </div>
+          <p class="footer-tagline">
+            Next-generation Iron Man style voice assistant engineered for Windows. Powered by Groq Llama-3 sub-second inference.
+          </p>
+          <div class="dev-attribution">
+            <span class="dev-badge">AUTHOR</span>
+            <span>Designed &amp; Developed by <strong>Naheel</strong> • Lahore, Pakistan</span>
+          </div>
+        </div>
+
+        <div class="footer-contact-block">
+          <h4 class="footer-block-title">Direct Inquiries &amp; Orders</h4>
+          <div class="footer-contact-links">
+            <a href="https://wa.me/923140474635?text=Hello%20Naheel,%20I%20am%20interested%20in%20purchasing%20the%20JARVIS%20AI%20Assistant." 
+               class="contact-chip" 
+               target="_blank" 
+               rel="noopener noreferrer">
+              <span class="chip-icon">💬</span>
+              <span class="chip-label">WhatsApp:</span>
+              <span class="chip-val">+92 314 0474635</span>
+            </a>
+
+            <a href="mailto:naheel.cyber@gmail.com" class="contact-chip">
+              <span class="chip-icon">✉️</span>
+              <span class="chip-label">Email:</span>
+              <span class="chip-val">naheel.cyber@gmail.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          © 2026 JARVIS AI. All Rights Reserved. Built with precision for Windows 10 &amp; 11.
+        </div>
+        <div class="footer-system-status">
+          <span class="status-indicator"></span>
+          <span>GROQ LLAMA-3 SERVICES OPERATIONAL</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
